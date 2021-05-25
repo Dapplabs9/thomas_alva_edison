@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Family book</title></head>
+    <link rel="stylesheet" href="style.css">
+    <body>
+        <button id="btn1" onclick="update();">Click</button>
+        <img id="img1" src="https://cdn.mos.cms.futurecdn.net/8URLqwFeJihbNpn3gByhg3-320-80.jpg">
+        <img id="image2"  src="https://i.guim.co.uk/img/media/b933fd4eb7788b737b0b304ec777447d8ac6ae93/0_183_3200_1918/master/3200.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=bfd66629efcac9d0fef15b5cb7e33396">
+        <h4>Thomas Alva Edison (February 11, 1847 – October 18, 1931) was an American inventor and businessman who has been described as America's greatest inventor.[ He developed many devices in fields such as electric power generation, mass communication, sound recording, and motion pictures. These inventions, which include the phonograph, the motion picture camera, and early versions of the electric light bulb, have had a widespread impact on the modern industrialized world. He was one of the first inventors to apply the principles of organized science and teamwork to the process of invention, working with many researchers and employees. He established the first industrial research laboratory.
+
+          Edison was raised in the American Midwest; early in his career he worked as a telegraph operator, which inspired some of his earliest inventions. In 1876, he established his first laboratory facility in Menlo Park, New Jersey, where many of his early inventions were developed. He later established a botanic laboratory in Fort Myers, Florida, in collaboration with businessmen Henry Ford and Harvey S. Firestone, and a laboratory in West Orange, New Jersey, that featured the world's first film studio, the Black Maria. He was a prolific inventor, holding 1,093 US patents in his name, as well as patents in other countries. Edison married twice and fathered six children. He died in 1931 of complications of diabetes.</h4>
+        <script>
+            var images = [
+                "https://cdn.mos.cms.futurecdn.net/8URLqwFeJihbNpn3gByhg3-320-80.jpg",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrgy6JA6a0hUOqr-OL2U2MJCkWMKnPQMSC8o3b5UXN6hIjcO0st7gCrE2BSMw225HvCRk&usqp=CAU"
+            ];
+
+            var i = 0;
+            function update (){
+              i++;
+              var turnOnAndOffVal = 1;
+              if (i > turnOnAndOffVal) {
+                i = 0;   
+              } 
+              console.log(i);
+              var updatedImage = images[i];
+              console.log(updatedImage);
+              document.getElementById("img1").src = updatedImage;
+            }
+        </script>
+    </body>
+</html>
